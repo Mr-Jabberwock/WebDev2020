@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{5321290A-6297-45ED-BBDE-1FC1FE88B450}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="WebDev2020/Views/Home/Index.cshtml">
     <Files>
-      <File FileName="WebDev2020/Views/Home/Index.cshtml" Line="5" Column="25" />
+      <File FileName="WebDev2020/Views/Home/Index.cshtml" Line="5" Column="61" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -9,10 +9,9 @@
           <Node name="WebDev2020" expanded="True">
             <Node name="WebDev2020" expanded="True">
               <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True">
-                  <Node name="Index.cshtml" selected="True" />
-                </Node>
+                <Node name="Home" expanded="True" />
               </Node>
+              <Node name="favicon.ico" selected="True" />
             </Node>
           </Node>
         </State>
