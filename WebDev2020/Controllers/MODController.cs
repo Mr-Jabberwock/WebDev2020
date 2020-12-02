@@ -1,7 +1,9 @@
-﻿using System;
+﻿using System.Text.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
+using System.Net;
+using System.Threading.Tasks;
 using System.Web.Mvc;
 using WebDev2020.Models;
 
@@ -10,15 +12,18 @@ namespace WebDev2020.Controllers
     public class MODController : Controller
     {
         // GET: MOD
-        public ActionResult Blog()
+        [HttpGet]
+        public ActionResult Blogs()
         {
-            List<Blog> blog = new List<Blog>();
-            Blog blog1 = new Blog { title = "blog", post = "Posty", firstName = "John", lastName = "Doe", urlPath = "dr.dk", userID = 1 };
-            Blog blog2 = new Blog { title = "blog2", post = "Posty2", firstName = "John2", lastName = "Doe2", urlPath = "tv2.dk", userID = 2 };
-            blog.Add(blog1);
-            blog.Add(blog2);
+            WebClient client = new WebClient();
+            var json = client.DownloadString("https://makersofdenmark20201027215010.azurewebsites.net/api/blog");
 
-            ViewData["Data"] = blog;
+            //check op på serialication / deserialication
+            //det kaldes mapping
+            var result = JsonSerializer.Deserialize<List<Blog>>(json);
+            int stop = 0;
+
+            ViewData["Data"] = result;
 
             return View();
 
