@@ -26,5 +26,15 @@ namespace WebDev2020.Controllers
 
             return View();
         }
+
+        public ActionResult Header()
+        {
+            return View();
+        }
+        public ActionResult Makerspace()
+        {
+            return View();
+        }
+
     }
 }

@@ -1,0 +1,820 @@
+﻿
+
+/* My Code */
+
+* {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Project2020Fonts';
+    src: url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+}
+
+p {
+    font-family: 'Project2020Fonts', 'Roboto';
+}
+
+h1, h2, h3, h4, h5, title {
+    font-family: 'Project2020Fonts','Bebas Neue';
+}
+
+main {
+    padding-top: 100px;
+}
+
+header {
+    position: fixed;
+    box-shadow: 0px 0px 4px gray;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+    z-index: 1;
+    font-family: 'Project2020Fonts','Bebas Neue';
+    letter-spacing: 2px;
+}
+
+a:visited {
+    color: black;
+}
+
+
+header .header-brand {
+    font-family: 'Project2020Fonts','Bebas Neue';
+    letter-spacing: 2px;
+    font-size: 24px;
+    font-weight: 900;
+    color: #111;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+}
+
+a, a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.underlines {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 10px;
+    margin-right: 20x;
+}
+
+    .underlines:after:last-child {
+        margin-right: 0;
+    }
+
+    .underlines:after {
+        position: absolute;
+        content: '';
+        display: block;
+        margin-top: -50px;
+        height: 30px;
+        border-top: 3px solid #F8BB74;
+        ;
+        border-bottom: 3px solid #F8BB74;
+        ;
+        width: 0;
+        background: transparent;
+        transition: width .5s ease, background-color .5s ease;
+    }
+
+    .underlines:hover:after {
+        width: 100%;
+    }
+
+
+
+header nav ul {
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+}
+
+    header nav ul li {
+        display: inline-block;
+        float: left;
+        list-style: none;
+        padding: 0 35px;
+    }
+
+        header nav ul li a {
+        }
+
+header .header-cases {
+    display: none;
+    outline: solid 1px #111 !important;
+    transition: outline 0.1s linear;
+}
+
+    header .header-cases:hover {
+        outline-width: 3px !important;
+    }
+
+@media only screen and (min-width: 1000px) {
+
+    header .header-brand {
+        margin: 31px 0;
+        padding: 0px 20px 0px 40px;
+        border-right: 3px solid #111;
+        text-align: left;
+        line-height: 38px;
+        float: left;
+    }
+
+    header nav ul {
+        margin: 20px 0 5px 50px;
+        width: 100%;
+        float: left;
+    }
+
+
+        header nav ul li a {
+            line-height: 60px;
+        }
+
+    header .header-cases {
+        display: block;
+        font-family: 'Project2020Fonts','Bebas Neue';
+        letter-spacing: 2px;
+        font-size: 16px;
+        color: #111;
+        text-transform: uppercase;
+        line-height: 38px;
+        border: 1px solid #111;
+        float: right;
+        margin-right: 40px;
+        margin-top: 30px;
+        padding: 0 20px;
+    }
+}
+
+.mydiv {
+    padding-left: 70px;
+}
+
+
+
+
+@media (max-width: 980px) {
+    .navbar__input {
+        display: none;
+        background-color: #f3f3f3;
+        border: 1px solid #34343f;
+        width: fit-content;
+        height: 36px;
+        border-radius: 18px;
+        outline: none;
+        padding: 0 30px 0 15px;
+        font-family: 'Project2020Fonts', 'Roboto';
+        font-size: 14px;
+        font-weight: 500;
+        color: #c0c7da;
+        letter-spacing: .5px;
+        word-spacing: 1px;
+    }
+
+    .navbar__button {
+        display: none;
+        position: absolute;
+        top: 3px;
+        right: 3px;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        outline: none;
+        border: none;
+        background: #111 url(https://res.cloudinary.com/ajayrawat/image/upload/v1508734484/search_icon_pr2sma.svg) no-repeat;
+        background-size: 17px;
+        background-position: center;
+        cursor: pointer;
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+        -webkit-transition: background-color .2s linear;
+        transition: background-color .2s linear;
+        will-change: background-color;
+    }
+
+    .navbar__flex {
+        display: none;
+        position: relative;
+        width: 100%;
+        min-height: 75px;
+        margin-left: auto;
+        margin-right: auto;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        align-items: center;
+    }
+
+    .navbar__left, .navbar__right {
+        display: none;
+        -webkit-box-flex: 2;
+    }
+
+    .navbar__hamburger {
+    }
+
+    .navbar__search {
+        display: none;
+        display: inline-block;
+    }
+
+    .navbar__inputwithicon {
+        display: none;
+        position: relative;
+        width: 220px;
+    }
+}
+
+
+
+/* Larger than desktop */
+@media (min-width: 980px) {
+
+
+    .navbar__input {
+        background-color: #ffff;
+        border: 1px solid #F8BB74 !important;
+        width: 230px;
+        height: 36px;
+        border-radius: 18px;
+        outline: none;
+        padding: 0 30px 0 15px;
+        font-family: 'Project2020Fonts', 'Roboto';
+        font-size: 14px;
+        font-weight: 500;
+        color: #c0c7da;
+        letter-spacing: .5px;
+        word-spacing: 1px;
+    }
+
+    .navbar__button {
+        position: absolute;
+        top: 3px;
+        right: -50px;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        outline: none;
+        border: none;
+        background: url(https://tomyum.alandenz.dk/wp-content/uploads/2020/12/loupe.svg) no-repeat;
+        background-size: 17px;
+        background-position: center;
+        cursor: pointer;
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+        -webkit-transition: background-color .2s linear;
+        transition: background-color .2s linear;
+        will-change: background-color;
+    }
+
+    .navbar__flex {
+        position: relative;
+        width: 100%;
+        min-height: 75px;
+        margin-left: 115px;
+        margin-right: auto;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        align-items: center;
+    }
+
+    .navbar__left, .navbar__right {
+        -webkit-box-flex: 2;
+        margin-top: 10px;
+        margin-right: 20px;
+    }
+
+    .navbar__hamburger {
+    }
+
+    .navbar__search {
+        display: inline-block;
+    }
+
+    .navbar__inputwithicon {
+        position: relative;
+        width: 220px;
+    }
+
+    .login-trigger {
+        margin-left: 5px;
+        margin-right: 5px;
+        display: inline-block;
+        font-size: 15px;
+        padding: 10px;
+        right: 0;
+        background-color: #F8BB74;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 3px;
+        color: black;
+        margin-top: 10px;
+        font-family: 'Project2020Fonts','Bebas Neue';
+        letter-spacing: 3px;
+    }
+}
+
+
+
+
+.container2 {
+    display: grid;
+    place-items: center;
+    height: 70vh;
+}
+
+.box2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    padding: 220px 20px 20px;
+    overflow: hidden;
+    background-color: #7F7F7F;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 768px) {
+    .box2 {
+        min-height: 715px;
+        padding: 0;
+    }
+
+    .box2__toggle:checked + .box2__image {
+        left: 600px;
+    }
+}
+
+@media (max-width: 767px) {
+    .box2__toggle:checked ~ .form--register {
+        width: 100%;
+        height: auto;
+        opacity: 1;
+    }
+
+    .box2__toggle:checked ~ .form--login {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+}
+
+.box2__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: 0 bottom;
+    transition: .4s ease-in-out;
+}
+
+@media (min-width: 768px) {
+    .box2__image {
+        width: 600px;
+        height: 100%;
+        object-position: 0 0;
+    }
+}
+
+.form {
+    width: 100%;
+    overflow: hidden;
+    text-align: left;
+    transition: .3s;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .form {
+        width: 300px;
+        padding: 0 20px;
+        color: white;
+    }
+}
+
+.form__title {
+    margin-bottom: 35px;
+    font-family: 'Project2020Fonts','Bebas Neue';
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.form--login {
+    opacity: 1;
+    position: absolute;
+    right: 125px;
+    transition: opacity .5s ease;
+    color: white;
+}
+
+.form--register {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    transition: opacity .5s ease;
+    position: absolute;
+    left: 125px;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .form--register {
+        width: 300px;
+        height: auto;
+        opacity: 1;
+    }
+}
+
+.form__helper {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+    .form__helper:last-of-type {
+        margin-bottom: 0;
+    }
+
+.form__label {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.4rem;
+    transition: .3s;
+}
+
+.icons {
+    margin: -4.5px;
+    padding-right: 13px;
+}
+
+.form__input {
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+    color: white;
+    background-color: transparent;
+    border-width: 0;
+    border-bottom: 1.8px solid white;
+    outline: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+    .form__input::placeholder {
+        opacity: 0;
+    }
+
+    .form__input:not(:placeholder-shown) + .form__label {
+        bottom: 25px;
+        color: #F8BB74;
+        font-size: 1.2rem;
+    }
+
+    .form__input:focus {
+        border-bottom-color: #F8BB74;
+    }
+
+
+        .form__input:focus + .form__label {
+            bottom: 25px;
+            color: #F8BB74;
+            font-size: 1.2rem;
+        }
+
+.form__button {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    color: #000;
+    background-color: #F8BB74;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Project2020Fonts','Bebas Neue';
+    letter-spacing: 2px;
+    font-size: 1.7rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.facebook_btn {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    color: white;
+    background-color: #4267B1;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Project2020Fonts','Bebas Neue';
+    letter-spacing: 2px;
+    font-size: 1.7rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.google_btn {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    color: #333;
+    background-color: #DADADA;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Project2020Fonts','Bebas Neue';
+    letter-spacing: 2px;
+    font-size: 1.7rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.form__button:hover {
+    cursor: pointer;
+    background-color: #d1a36e;
+    transition: 0.2s;
+}
+
+.facebook_btn:hover {
+    cursor: pointer;
+    background-color: #3662B8;
+    transition: 0.2s;
+}
+
+.google_btn:hover {
+    cursor: pointer;
+    background-color: #C7C4C4;
+    transition: 0.2s;
+}
+
+.linebreaks {
+    margin-top: 20px;
+    border-bottom: 2px solid white;
+    opacity: 50%;
+}
+
+.form__text {
+    margin-top: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.4rem;
+}
+
+.form__link {
+    color: #F8BB74;
+    cursor: pointer;
+}
+
+/*Checkbox*/
+
+
+.label2 > span {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #9e9e9e;
+    margin-right: 15px;
+    border-radius: 5px;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.input2:checked + .label2 > span {
+    border: 2px solid white;
+    background-color: #F8BB74;
+    animation: bounce 250ms;
+    cursor: pointer;
+}
+
+
+    .input2:checked + .label2 > span::before {
+        content: '';
+        position: absolute;
+        top: 6px;
+        left: 4px;
+        border-right: 3px solid transparent;
+        border-bottom: 3px solid transparent;
+        transform: rotate(45deg);
+        transform-origin: 0% 100%;
+        animation: checked-box 125ms 250ms forwards;
+        cursor: pointer;
+    }
+
+@keyframes checked-box {
+    0% {
+        width: 0;
+        height: 0;
+        transform: translate(0,0) rotate(45deg);
+    }
+
+    33% {
+        width: 4px;
+        height: 0;
+        transform: translate(0,0) rotate(45deg);
+    }
+
+    100% {
+        width: 4px;
+        height: 8px;
+        transform: translate(0,-8px) rotate(45deg);
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+
+    33% {
+        transform: scale(.7);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.label3 {
+    display: flex;
+    align-items: center;
+    color: #9e9e9e;
+    position: relative;
+}
+
+.input2 {
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.check_center {
+    text-align: center;
+    display: inline-block;
+}
+
+.btm {
+    bottom: 0;
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 30px 30px 20px 30px;
+    color: #2f2f2f;
+    background-color: #4C97B9;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(38,76,93,1) 0%, rgba(19,142,171,1) 90%, rgba(17,149,180,1) 100%, rgba(0,212,255,1) 100%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+    .footer > * {
+        flex: 1 100%;
+    }
+
+.footer__addr {
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+}
+
+.footer__logo {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    text-transform: lowercase;
+    font-size: 1.5rem;
+}
+
+.footer__addr h2 {
+    margin-top: 1.3em;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.nav__title {
+    font-weight: bold;
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.footer address {
+    font-style: normal;
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.footer__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    max-width: max-content;
+    background-color: #F8BB74;
+    font-weight: bolg;
+    border-radius: 100px;
+    color: #333;
+    line-height: 0;
+    margin: 0.6em 0;
+    font-size: 1rem;
+    padding: 0 1.3em;
+    font-family: 'Project2020Fonts','Bebas Neue';
+}
+
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer li {
+    line-height: 2em;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer__nav {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+    .footer__nav > * {
+        flex: 1 50%;
+        margin-right: 1.25em;
+    }
+
+.nav__ul a {
+    color: #F8BB74;
+    font-weight: 400;
+}
+
+.nav__ul--extra {
+    column-count: 2;
+    column-gap: 1.25em;
+}
+
+.legal {
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+.legal__links {
+    display: flex;
+    align-items: center;
+}
+
+
+@media screen and (min-width: 24.375em) {
+    .legal .legal__links {
+        margin-left: auto;
+    }
+}
+
+@media screen and (min-width: 40.375em) {
+    .footer__nav > * {
+        flex: 1;
+    }
+
+    .nav__item--extra {
+        flex-grow: 2;
+    }
+
+    .footer__addr {
+        flex: 1 0px;
+    }
+
+    .footer__nav {
+        flex: 2 0px;
+    }
+}
