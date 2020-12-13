@@ -169,7 +169,6 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Header.cshtml" />
-    <Content Include="Views\Shared\Header.cshtml" />
     <Content Include="Views\Home\Makerspace.cshtml" />
     <Content Include="Views\Home\Footer.cshtml" />
   </ItemGroup>

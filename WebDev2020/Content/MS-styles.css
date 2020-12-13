@@ -9,14 +9,7 @@
 
 body {
     background-color: #4C97B9;
-    display: grid;
-    grid-template-areas: "MSFeed MSFeed MSGallery" "MSFeed MSFeed MSGallery" "MSFeed MSFeed MSGallery" "MSFeed MSFeed MSGallery";
-    grid-template-rows: 50px 1fr 250px;
-    grid-template-columns: 20% 1fr 55%;
-    grid-gap: 30px;
-    height: 100vh;
-    margin: 40px;
-    font-family: sans-serif;
+    z-index: -2 !important;
 }
 
 p {
@@ -36,7 +29,7 @@ h1, h2, h3, h4, h5, title {
     text-shadow: 1px 1px #000000;
     color: rgb(126, 126, 126);
     position: relative;
-    bottom: 30px;
+    left: 20px;
 }
 
 #FeedFollow {
@@ -50,18 +43,16 @@ h1, h2, h3, h4, h5, title {
     width: 85px;
     height: 30px;
     position: absolute;
-    top: 60px;
+    top: 40px;
     left: 700px;
     cursor: pointer;
 }
 
 #FeedContainer {
     width: 100%;
-    height: 97%;
-    position: relative;
+    height: 626px;
+    margin: 5px;
     bottom: 40px;
-    overflow: hidden;
-    overflow-y: scroll;
 }
 
     #FeedContainer h4 {
@@ -69,6 +60,7 @@ h1, h2, h3, h4, h5, title {
         letter-spacing: 2px;
         float: inline-start;
         margin-bottom: 20px;
+        position: relative;
     }
 
     #FeedContainer img {
@@ -85,36 +77,41 @@ h1, h2, h3, h4, h5, title {
     }
 
 #MSFeed, #MSGallery, #MSAbout {
-    padding: 20px;
-    background: #FFFFFF;
-    opacity: 77%;
+    background: #E8F1F6;
     border-radius: 5px;
 }
 
 #MSFeed {
-    grid-area: MSFeed;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+    top: 110px;
+    height: 825px;
+    overflow: hidden;
+    overflow-y: scroll;
+    width: 90%;
+    padding: 10px;
+    float: right;
 }
 
 #MSGallery {
-    grid-area: MSGallery;
     background-color: #4C97B9;
-    position: relative;
-    bottom: 15px;
+    padding: 10px;
+    top: 70px;
+    float: left;
 }
 
 #AboutContainer {
     width: 100%;
     height: 100%;
-    padding: 5px;
 }
 
+
 #MSAbout {
-    grid-area: MSAbout;
     overflow: hidden;
     height: 526px;
     overflow-y: scroll;
     margin: 5px;
+    padding: 20px;
 }
 
 #MSAboutTitle {
@@ -124,14 +121,12 @@ h1, h2, h3, h4, h5, title {
     text-transform: capitalize;
     text-shadow: 1px 1px #000000;
     color: rgb(126, 126, 126);
-    position: relative;
     bottom: 30px;
 }
 
 #MSAboutText {
     float: inline-start;
     line-height: 25px;
-    position: relative;
     bottom: 40px;
     margin: 15px;
     padding: 10px;
@@ -181,9 +176,9 @@ h1, h2, h3, h4, h5, title {
 
 /* Slideshow container */
 .slideshow-container {
+    z-index: 0;
     max-width: 1000px;
     max-height: 400px;
-    position: relative;
     margin: auto;
     overflow: hidden;
     border-radius: 5px;
@@ -316,8 +311,6 @@ h1, h2, h3, h4, h5, title {
 }
 
 .event-list {
-    display: flex;
-    flex-direction: column;
     border-right: 1px solid rgb(229, 229, 229);
 }
 
