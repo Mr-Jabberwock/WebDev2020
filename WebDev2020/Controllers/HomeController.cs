@@ -40,5 +40,20 @@ namespace WebDev2020.Controllers
             return View();
         }
 
+        public ActionResult Makerblog()
+        {
+            return View();
+        }
+
+        public ActionResult Forum()
+        {
+            return View();
+        }
+
+        public ActionResult Settings()
+        {
+            return View();
+        }
+
     }
 }

@@ -535,9 +535,10 @@ a {
 
 #popOp {
     padding: 10px;
+    padding-bottom: 50!important;
     margin: 50px;
     position: fixed;
-    height: 755px;
+
     width: 25%;
     padding-top: 70px;
     right: -40px;
@@ -550,6 +551,7 @@ a {
     -webkit-box-shadow: 0px 0px 5px -2px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 5px -2px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 5px -2px rgba(0,0,0,0.75);
+    z-index: 1;
 }
 
 @keyframes popUp {
@@ -583,6 +585,8 @@ a {
     background-color: white;
     color: #707070;
     cursor: pointer;
+    text-align: center;
+    padding-top: 18px;
 }
 
     .makerforums:hover, .settings:hover {

@@ -37,7 +37,7 @@
                                 <li> @Html.ActionLink("Makerspace", "Makerspace", "Home", null, new { @class = "underlines" })</li>
                                 <li> <a><img src="https://tomyum.alandenz.dk/wp-content/uploads/2020/12/LOGO.png" alt="" srcset=""> </a></li>
                                 <li> <a class="underlines" href="">ABOUT US</a></li>
-                                <li> <a class="underlines" href="">MAKERBLOGS</a></li>
+                                <li> @Html.ActionLink("Makerblog", "Makerblog", "Home", null, new { @class = "underlines" })</li>
 
                             </div>
                         </div>
@@ -143,8 +143,8 @@
                 <p class="mailname">BestEmail@email.com</p>
             </div>
             <div class="makerNsettings">
-                <button class="makerforums">Makerforums</button>
-                <button class="settings">Settings</button>
+                @Html.ActionLink("Makerforums", "Forum", "Home", null, new { @class = "makerforums" })
+                @Html.ActionLink("Settings", "Settings", "Home", null, new { @class = "settings" })
             </div>
         </div>
         <div class="bio">

@@ -127,18 +127,23 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\blog.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\flexboxgrid.css" />
+    <Content Include="Content\Forum-style.css" />
     <Content Include="Content\frontpage-style.css" />
     <Content Include="Content\header-styles.css" />
+    <Content Include="Content\MB-styles.css" />
     <Content Include="Content\MS-styles.css" />
+    <Content Include="Content\Settings-styles.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Scripts\blog.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -171,6 +176,9 @@
     <Content Include="Views\Home\Header.cshtml" />
     <Content Include="Views\Home\Makerspace.cshtml" />
     <Content Include="Views\Home\Footer.cshtml" />
+    <Content Include="Views\Home\Makerblog.cshtml" />
+    <Content Include="Views\Home\Forum.cshtml" />
+    <Content Include="Views\Home\Settings.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,0 +1,121 @@
+﻿
+.blogName {
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.descriptions {
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    height: 270px;
+}
+
+.blogtitle {
+    font-size: 25px;
+    color: #FFAC4B;
+    font-weight: bold;
+}
+
+#blogpopOp {
+    padding: 10px;
+    margin: 50px;
+    position: fixed;
+    height: 50%;
+    width: 40%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #4C97B9;
+    display: none;
+    animation-fill-mode: forwards;
+    border: none;
+    flex-direction: column;
+    -webkit-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.51);
+    -moz-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.51);
+    box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.51);
+    font-family: "Roboto";
+}
+
+@keyframes popUp {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 5;
+    }
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+}
+
+.btns {
+    background-color: #FFAC4B;
+    color: black;
+    font-size: 15px;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+    .btns:hover, .uploadimage:hover {
+        transition: 0.2s;
+        background-color: rgb(209, 146, 73);
+    }
+
+.btn-space1 {
+    left: 80%;
+    position: absolute;
+    float: right;
+}
+
+.btn-space2 {
+    left: 90%;
+    position: absolute;
+    float: right;
+}
+
+.uploadimage {
+    background-color: #FFAC4B;
+    color: black;
+    font-size: 15px;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.img-space {
+    position: absolute;
+    float: left;
+    left: 3%;
+}
+
+.container {
+    padding-top: 10px;
+    width: 95%;
+    margin: 0 15px;
+}
+
+.close {
+    background: none;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    float: right;
+}

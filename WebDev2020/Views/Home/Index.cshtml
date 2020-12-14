@@ -134,8 +134,8 @@
                     <H1 class="sub-title">WHERE CAN I FIND A MAKERSPACE?</H1>
                     <h3 class="sub-text">JOIN AND FIND YOUR LOCAL MAKERSPACE!</h3>
                     <div class="centered">
-                        <div class="page-btn">
-                            <a href="" title="">SEE MORE</a>
+                        <div class="">
+                            @Html.ActionLink("See More", "Makerspace", "Home", null, new { @class = "page-btn" })
                         </div>
                     </div>
                 </div>
@@ -158,8 +158,8 @@
                     <H1 class="sub-title">GOT ANY TOPICS IN MIND?</H1>
                     <h3 class="sub-text">START A DISCUSSION WITH YOUR FELLOW CREATORS!</h3>
                     <div class="centered">
-                        <div class="page-btn">
-                            <a href="" title="">REGISTER</a>
+                        <div class="">
+                            @Html.ActionLink("Register", "Forum", "Home", null, new { @class = "page-btn" })
                         </div>
                     </div>
                 </div>
@@ -182,8 +182,8 @@
                     <H1 class="sub-title">INTERESTED IN BECOMING A PART OF THE COMMUNITY?</H1>
                     <h3 class="sub-text">MAKE AN ACCOUNT TODAY!</h3>
                     <div class="centered">
-                        <div class="page-btn">
-                            <a href="" title="">JOIN</a>
+                        <div class="">
+                            <label id="signins" class="page-btn" for="modal__state" href="" title="">JOIN</label>
                         </div>
                     </div>
                 </div>
