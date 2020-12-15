@@ -16,12 +16,8 @@ namespace WebDev2020.Controllers
         public ActionResult Blogs()
         {
             WebClient client = new WebClient();
-            var json = client.DownloadString("https://makersofdenmark20201027215010.azurewebsites.net/api/blog");
-
-            //check op på serialication / deserialication
-            //det kaldes mapping
+            var json = client.DownloadString("https://makersofdenmark20201210180300.azurewebsites.net/api/blog");
             var result = JsonSerializer.Deserialize<List<Blog>>(json);
-            int stop = 0;
 
             ViewData["Data"] = result;
 
