@@ -1,7 +1,83 @@
 ﻿@{
-    ViewBag.Title = "About";
+    Layout = null;
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<p>Use this area to provide additional information.</p>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <link href="@Url.Content("~/Content/About-style.css")" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    @RenderPage("~/Views/Home/Header.cshtml")
+    <div class="center_page">
+
+        <div><h1>about us</h1></div>
+        <div class="wrapper">
+            <aside>
+                <div class="we-text"><h2 class="blue_underline">Who are we</h2></div>
+                <div class="we-p spacing-area">
+                    <p>
+                        GHhhghghsghgshsjhgshjshsksgssg hskjh skjhsj s sjkgs kjjks skjgs hskh
+                        s sig sjhsjh hjs ses kjhskj Khskj h sjahs Ijs gshjsjbsbhsbjbsjkbs
+                        skjhw. Ski kgqi uaæo jsildhusehwojl hwukgi si hoiwh whdwhdw
+                        GHhhghghsghgshsjhgshjshsksgssg hskjh skjhsj s sjkgs kjjks skjgs hskh
+                        s sig sjhsjh hjs ses kjhskj Khskj h sjahs Ijs gshjsjbsbhsbjbsjkbs
+                        skjhw. Ski kgqi uaæo jsildhusehwojl hwukgi si hoiwh <br />
+                        br whdwhdwGHhhghghsghgshsjhgshjshsksgssg hskjh skjhsj s sjkgs kjjks
+                        skjgs hskh s sig sjhsjh hjs ses kjhskj Khskj h sjahs Ijs
+                        gshjsjbsbhsbjbsjkbs skjhw. Ski kgqi uaæo jsildhusehwojl hwukgi si
+                        hoiwh whdwhdwGHhhghghsghgshsjhgshjshsksgssg hskjh skjhsj s sjkgs
+                        kjjks skjgs hskh s sig sjhsjh hjs ses kjhskj Khskj h sjahs Ijs
+                        gshjsjbsbhsbjbsjkbs skjhw. Ski kgqi uaæo jsildhusehwojl hwukgi si
+                        hoiwh whdwhdwGHhhghghsghgshsjhgshjshsksgssg hskjh skjhsj s sjkgs
+                        <br />
+                        kjjks skjgs hskh s sig sjhsjh hjs ses kjhskj Khskj h sjahs Ijs
+                        gshjsjbsbhsbjbsjkbs skjhw. Ski kgqi uaæo jsildhusehwojl hwukgi si
+                        <br />
+                        hoiwh whdwhdwGHhhghghsghgshsjhgshjshsksgssg hskjh skjhsj s sjkgs
+                        kjjks skjgs hskh s sig sjhsjh hjs ses kjhskj Khskj h sjahs Ijs
+                        gshjsjbsbhsbjbsjkbs skjhw. Ski kgqi uaæo jsildhusehwojl hwukgi si
+                        hoiwh whdwhdw ddkgddghkdg jdh dgjdhgdhgjdhkdkdhjhdjkhdjkhd djddhkjd
+                        dhgdh gd dhgdhgdhgd dhgdhgd <br />jdgdkgdkdjd djkhdkjhkjdh d <br />
+                        jhdgdkkdh
+                    </p>
+                </div>
+            </aside>
+            <section>
+                <div class="top">
+                    <div class="join"><h2 class="blue_underline">Join Us</h2></div>
+                    <div class="join-p">
+                        <p>
+                            GHhhghghsghgshsjhgshjshsksgssg hskjh skjhsj s sjkgs kjjks skjgs
+                            hskh s sig sjhsjh hjs ses kjhskj Khskj h sjahs Ijs
+                            gshjsjbsbhsbjbsjkbs skjhw. Ski kgqi uaæo jsildhusehwojl hwukgi si
+                            hoiwh whdwhdw GHhhghghsghgshsjhgshjshsksgssg hskjh skjhsj s sjkgs
+                            <br />
+                            GHhhghghsghgshsjhgshjshsksgssg hskjh skjhsj s sjkgs kjjks skjgs
+                            hskh s sig sjhsjh hjs ses kjhskj Khskj h sjahs Ijs
+                            gshjsjbsbhsbjbsjkbs skjhw. Ski kgqi uaæo jsildhusehwojl hwukgi si
+                            hoiwh whdwhdw GHhhghghsghgshsjhgshjshsksgssg hskjh skjhsj s sjkgs
+                        </p>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="contact"><h2 class="blue_underline">Contact us</h2></div>
+                    <div class="contact-info">
+                        <p class="">
+                            Makers of Denmark <br />
+                            Seebladsgade 1<br />
+                            DK 5000 Odense <br />
+                            +45 12345678 <br />
+                            many@makersofdk.com
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    @RenderPage("~/Views/Home/Footer.cshtml")
+</body>
+</html>

@@ -1,0 +1,683 @@
+﻿@font-face {
+    font-family: 'Project2020Fonts';
+    src: url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+}
+
+html {
+    overflow-x: scroll;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+body {
+    margin: 0 !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+section {
+    height: 100% !important;
+}
+
+.img1 {
+    display: block;
+    text-align: center;
+    padding-right: 150px;
+    margin-top: 50px;
+}
+
+p {
+    font-family: 'Project2020Fonts', 'Roboto';
+}
+
+h1, h2, h3, h4, h5, title {
+    font-family: 'Project2020Fonts','Bebas Neue';
+}
+
+.pding {
+    padding-right: 200px;
+}
+
+.pding-left {
+    padding-left: 150px;
+}
+
+.bg-img {
+    background-image: url(https://tomyum.alandenz.dk/wp-content/uploads/2020/12/Group-144-3.png);
+    /* Full height */
+    height: 100% !important;
+    /* Center and scale the image nicely */
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.bg-img2 {
+    background-image: url(https://tomyum.alandenz.dk/wp-content/uploads/2020/12/Group-149-2.png);
+    /* Full height */
+    height: 100% !important;
+    /* Center and scale the image nicely */
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+
+.bg-img3 {
+    background-image: url(https://tomyum.alandenz.dk/wp-content/uploads/2020/12/Group-153-3.png);
+    /* Full height */
+    height: 100% !important;
+    width: 1978px !important;
+    /* Center and scale the image nicely */
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.bg-img4 {
+    background-image: url(https://tomyum.alandenz.dk/wp-content/uploads/2020/12/Group-158-1.png);
+    /* Full height */
+    height: 100% !important;
+    width: 1978px !important;
+    /* Center and scale the image nicely */
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.bg-img5 {
+    background-image: url(https://tomyum.alandenz.dk/wp-content/uploads/2020/12/Group-158-3.png);
+    /* Full height */
+    height: 100% !important;
+    width: 1978px !important;
+    /* Center and scale the image nicely */
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.bg-gradient {
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(38,76,93,1) 0%, rgba(19,142,171,1) 90%, rgba(17,149,180,1) 100%, rgba(0,212,255,1) 100%);
+}
+
+.h3-text {
+    font-size: 50px;
+    font-weight: 500;
+    font-family: 'Project2020Fonts','Bebas Neue';
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 0%;
+}
+
+.h3-undertext {
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Project2020Fonts','Bebas Neue';
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 50%;
+}
+
+.h1-title {
+    font-size: 75px;
+    font-weight: 500;
+    font-family: 'Project2020Fonts','Bebas Neue';
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 100%;
+}
+
+.space {
+    padding-top: 330px;
+}
+
+.space2 {
+    padding-top: 30px;
+}
+
+.space3 {
+    padding-top: 150px;
+}
+
+.bottom-space {
+    padding-bottom: 330px;
+}
+
+.space-right {
+    margin-right: 200px;
+}
+
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.searchTerm {
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+    border: none;
+    border-right: none;
+    padding: 5px;
+    height: 70px;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+    color: #9DBFAF;
+    -webkit-box-shadow: 4px 13px 17px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 4px 13px 17px 0px rgba(0,0,0,0.15);
+    box-shadow: 4px 13px 17px 0px rgba(0,0,0,0.15);
+}
+
+    .searchTerm:focus {
+        color: #111;
+        font-size: 18px;
+    }
+
+.searchButton {
+    width: 200px;
+    height: 80px;
+    border: 1px solid #F8BB74;
+    background: #F8BB74;
+    text-align: center;
+    color: #111;
+    font-weight: 700;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-box-shadow: 4px 13px 17px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 4px 13px 17px 0px rgba(0,0,0,0.15);
+    box-shadow: 4px 13px 17px 0px rgba(0,0,0,0.15);
+}
+
+    .searchButton:hover {
+        cursor: pointer;
+        background-color: #d1a36e;
+        transition: 0.2s;
+    }
+
+/*Resize the wrap to see the search bar change!*/
+.wrap {
+    width: 30%;
+    position: absolute;
+    top: 72%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+}
+
+.bg-color-grey {
+    background-color: #7B7B7B;
+}
+
+.white-text {
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    font-family: 'Project2020Fonts','Bebas Neue';
+    letter-spacing: 2px;
+}
+
+.white-text2 {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Project2020Fonts', 'Roboto';
+    letter-spacing: 0.5px
+}
+
+.white-title {
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 50px;
+    font-family: 'Project2020Fonts','Bebas Neue';
+    letter-spacing: 2.5px;
+}
+
+.align {
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#thumbnails img, #main {
+    box-shadow: 2px 2px 10px 5px #b8b8b8;
+    border-radius: 10px;
+}
+
+
+
+#thumbnails {
+    text-align: center;
+}
+
+    #thumbnails img {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        cursor: pointer;
+    }
+
+@media only screen and (max-width: 480px) {
+    #thumbnails img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+#thumbnails img:hover {
+    transform: scale(1.05);
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 100px auto;
+}
+
+@media only screen and (max-width: 480px) {
+    #main {
+        width: 100%;
+    }
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.under_line {
+    padding: 5px 0px;
+    position: relative;
+    display: inline;
+}
+
+    .under_line:first-child:before,
+    .under_line:last-child:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        border-bottom: 5px solid #F8BB74;
+        width: 40%;
+    }
+
+    .under_line:first-child:before {
+        left: 0;
+    }
+
+    .under_line:last-child:before {
+        right: 0;
+    }
+
+.page-btn {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Project2020Fonts','Bebas Neue';
+    letter-spacing: 2px;
+    padding: 20px;
+    width: 100px;
+    color: black;
+    background-color: #F8BB74;
+    border-radius: 3px;
+    color: black;
+    margin-top: 10px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+    .page-btn:hover {
+        cursor: pointer;
+        background-color: #d1a36e;
+        transition: 0.2s;
+    }
+
+
+.sign-in:visited {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: #111;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+}
+
+.sub-title {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Project2020Fonts','Bebas Neue';
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.sub-text {
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Project2020Fonts', 'Roboto';
+    letter-spacing: 2px;
+    line-height: 10%;
+    text-align: center;
+}
+
+
+
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.modal__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+
+/* display the modal overlay when the input[type=radio] is checked */
+.modal__state:checked + .modal__overlay {
+    opacity: 1;
+    animation: fade-in .4s;
+    display: block;
+}
+
+@keyframes scoot-up {
+    0% {
+        margin-top: 80px;
+    }
+
+    100% {
+        margin-top: 50px;
+    }
+}
+
+.modal {
+    position: relative;
+    margin: 200px;
+    margin-top: 80px;
+    padding: 100px 20px;
+    background: #f4f4f4;
+    text-align: left;
+    box-shadow: 0px 0px 38px rgba(0, 0, 0, 0.2);
+}
+
+.modal__state:checked + .modal__overlay .modal {
+    margin-top: 50px;
+    animation: scoot-up .2s;
+    animation-timing-function: ease-out;
+    transform-origin: 50% 0px;
+}
+
+.modal__close {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+}
+
+.modal__overlay-close {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* the input[type=radio] that's toggled when the label is clicked */
+.modal__state {
+    display: none;
+}
+
+/* button styles */
+.button {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px;
+    right: 0;
+    background-color: #F8BB74;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 3px;
+    color: black;
+    margin-top: 10px;
+    font-family: 'Project2020Fonts','Bebas Neue';
+    letter-spacing: 1px;
+}
+
+.button-signout {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px;
+    right: 0;
+    border: none;
+    background-color: #F8BB74;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 3px;
+    color: black;
+    margin-top: 10px;
+    font-family: 'Project2020Fonts','Bebas Neue';
+    letter-spacing: 1px;
+}
+
+.button:hover, .button:focus {
+    cursor: pointer;
+    background-color: #d1a36e;
+    transition: 0.2s;
+}
+
+.button-signout:hover, .button-signout:focus {
+    cursor: pointer;
+    background-color: #d1a36e;
+    transition: 0.2s;
+}
+
+.button:active {
+}
+
+/* close button */
+.button--close {
+    padding: 2em 2em;
+    background-color: #FC5050;
+    background-image: url(https://tomyum.alandenz.dk/wp-content/uploads/2020/12/Group-159.png);
+    color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin: 0 50px;
+}
+
+.button--inline {
+    padding: .25em .5em;
+}
+
+.button--close:hover,
+.button--close:focus {
+    background-color: #ba0c1f;
+}
+
+.button--close:active {
+    box-shadow: 0 0 0 #8A0917;
+}
+
+
+
+.pfp {
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+#orale {
+    display: none;
+}
+
+
+
+#popOp {
+    padding: 10px;
+    padding-bottom: 50!important;
+    margin: 50px;
+    position: fixed;
+
+    width: 25%;
+    padding-top: 70px;
+    right: -40px;
+    border-radius: 15px;
+    display: none;
+    animation-fill-mode: forwards;
+    flex-direction: column;
+    font-family: "Roboto";
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 5px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px -2px rgba(0,0,0,0.75);
+    z-index: 1;
+}
+
+@keyframes popUp {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+.picNname {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: -10px;
+}
+
+.profilePicture {
+}
+
+.makerforums, .settings {
+    height: 40px;
+    width: 160px;
+    border: 1px solid #b3aeae;
+    border-radius: 4px;
+    margin: 5px;
+    font-family: "Bebas Neue";
+    background-color: white;
+    color: #707070;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 18px;
+}
+
+    .makerforums:hover, .settings:hover {
+        background-color: #D1CBCB;
+        color: #111;
+        transition: 0.2s;
+    }
+
+.makerNsettings {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.bio {
+    border-top: 0.8px solid #D1CBCB;
+    border-bottom: 0.8px solid #D1CBCB;
+    width: 100%;
+}
+
+.badges {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 0.8px solid #D1CBCB;
+    padding-bottom: 10px;
+}
+
+.badge {
+    border: 1px solid grey;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    margin: 2px;
+}
+
+.notifications {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 0.8px solid #D1CBCB;
+}
+
+.notiBadge {
+    border-radius: 100%;
+    border: 1px solid grey;
+    height: 40px;
+    width: 40px;
+}
+
+.signoutAlign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signout {
+    background-color: #F8BB74;
+    height: 40px;
+    width: 50%;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    border-radius: 5%;
+    margin-top: 10px;
+    border-style: solid;
+    border: 0px;
+    font-family: "Bebas Neue"
+}
+
+h4 {
+    font-family: "Bebas Neue"
+}
+
+
+
+.imgsize {
+    width: 120px;
+    height: 120px;
+    margin: 0 0 0 10px;
+}
+
+.names {
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+.mailname {
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: gray;
+    margin-top: -15px;
+}

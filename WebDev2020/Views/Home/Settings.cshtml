@@ -1,0 +1,90 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <link href="@Url.Content("~/Content/Settings-styles.css")" rel="stylesheet" type="text/css" />
+</head>
+< <body>
+    @RenderPage("~/Views/Home/Header.cshtml")
+    <section>
+        <div class="containers">
+
+            <div class="profilepic">
+                <h1>profile settings</h1>
+                <img src="https://tomyum.alandenz.dk/wp-content/uploads/2020/12/Group-160.png" />
+
+                <h3>welcome, Oliver Kusk</h3>
+
+            </div>
+    </section>
+
+    <main class="main-padding">
+        <div class="row">
+            <div class="column box-size">
+                <div class="card">
+                    <div class="setting-top"><h3>Personal Data</h3> </div>
+                    <div class="setting-mdl">
+                        <div class="setting-txt"><p>Change your personal data, the way you see fit.</p></div>
+                        <div class="setting-img"><img src="https://tomyum.alandenz.dk/wp-content/uploads/2020/12/user.png" alt=""></div>
+                    </div>
+                    <div class="setting-btm">
+                        <div class="setting-edit"><p>Edit personal data</p></div>
+                        <div class="setting-img"><img src="https://tomyum.alandenz.dk/wp-content/uploads/2020/12/right-arrow.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="column box-size">
+                <div class="card">
+                    <div class="setting-top"><h3>Security</h3> </div>
+                    <div class="setting-mdl">
+                        <div class="setting-txt"><p>Boost your security further, and also change your old passwords.</p></div>
+                        <div class="setting-img"><img src="https://tomyum.alandenz.dk/wp-content/uploads/2020/12/padlock.png"></div>
+                    </div>
+                    <div class="setting-btm">
+                        <div class="setting-edit"><p>Boost your security</p></div>
+                        <div class="setting-img"><img src="https://tomyum.alandenz.dk/wp-content/uploads/2020/12/right-arrow.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="column main-padding box-size">
+                <div class="card">
+                    <div class="setting-top"><h3>Appearance</h3> </div>
+                    <div class="setting-mdl">
+                        <div class="setting-txt"><p>Edit the appearance of your page, like from Light mode to Dark mode.</p></div>
+                        <div class="setting-img"><img src="https://tomyum.alandenz.dk/wp-content/uploads/2020/12/paintbrush.png" alt=""></div>
+                    </div>
+
+                    <div class="setting-btm">
+                        <div class="setting-edit"><p>Edit your Appearance.</p></div>
+                        <div class="setting-img"><img src="https://tomyum.alandenz.dk/wp-content/uploads/2020/12/right-arrow.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="column main-padding box-size">
+                <div class="card">
+                    <div class="setting-top"><h3>Notifications</h3> </div>
+                    <div class="setting-mdl">
+                        <div class="setting-txt"><p>Change your notifications, and stay up to date with all the info.</p></div>
+                        <div class="setting-img"><img src="https://tomyum.alandenz.dk/wp-content/uploads/2020/12/bell.png" alt=""></div>
+                    </div>
+                    <div class="setting-btm">
+                        <div class="setting-edit"><p>Change your notifications</p></div>
+                        <div class="setting-img"><img src="https://tomyum.alandenz.dk/wp-content/uploads/2020/12/right-arrow.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    @RenderPage("~/Views/Home/Footer.cshtml")
+</body>
+</html>

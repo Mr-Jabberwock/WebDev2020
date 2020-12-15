@@ -1,0 +1,175 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="@Url.Content("~/Content/Forum-style.css")" rel="stylesheet" type="text/css" />
+    <title></title>
+</head>
+<body>
+    @RenderPage("~/Views/Home/Header.cshtml")
+    <div class="wrapper">
+        <aside>
+            <div class="filter-top">
+                <form action="/action_page.php" method="get">
+                    <input type="checkbox" name="makerspace" value="Bike" />
+                    <label for="vehicle1"> All Topics</label><br /><br />
+            </div>
+            <div class="filter-btm">
+                <form action="/action_page.php" method="get">
+                    <input type="checkbox" name="makerspace" value="Bike" />
+                    <label for="vehicle1"> makerspaces</label><br /><br />
+                    <input type="checkbox" name="lasercutting" value="Car" />
+                    <label for="vehicle2"> lasercutting</label><br />
+                    <br />
+                    <input type="checkbox" name="3dprint" value="Boat" checked />
+                    <label for="vehicle3"> 3D Printing</label><br />
+                    <br />
+                    <input type="checkbox" name="workshops" value="Bike" />
+                    <label for="vehicle1"> Workshops</label><br />
+                    <br />
+                    <input type="checkbox" name="events" value="Car" />
+                    <label for="vehicle2"> Events</label><br />
+                    <br />
+                    <input type="checkbox" name="badges" value="Car" />
+                    <label for="vehicle2"> badges</label><br />
+                    <br />
+                    <input type="checkbox" name="help" value="Boat" checked />
+                    <label for="vehicle3"> Help</label><br /><br />
+                    <br />
+                </form>
+            </div>
+        </aside>
+        <main>
+            <div class="topic">
+                <div class="topic-container">
+                    <div class="latest-topic">latest</div>
+                    <div class="all-topic">all</div>
+                    <div class="week-topics">week</div>
+                    <div class="create-topic">create topic</div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-container">
+                    <div>
+                        <div class="posted-container">
+                            <div class="posted-img"><img src="https://tomyum.alandenz.dk/wp-content/uploads/2020/12/simon.jpg" alt="Avatar"> <h4>J Jones</h4></div>
+                            <div class="posted-topic">
+                                <h2>Problems with lasercutting</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fugit atque culpa saepe sit quaerat aspernatur consequuntur, cum dolore reiciendis sapiente fuga dolores magnam ipsum facilis vitae nobis ad. Omnis!</p>
+                            </div>
+                            <div class="posted-subject">
+                                <div class="posted-tag"><h2>lasercutting</h2><p>created 20.02.2020</p></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="posted-container">
+                            <div class="posted-img"><img src="https://tomyum.alandenz.dk/wp-content/uploads/2020/12/simon.jpg" alt="Avatar"> <h4>J Jones</h4></div>
+                            <div class="posted-topic">
+                                <h2>New badges for new attendees</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fugit atque culpa saepe sit quaerat aspernatur consequuntur, cum dolore reiciendis sapiente fuga dolores magnam ipsum facilis vitae nobis ad. Omnis!</p>
+                            </div>
+                            <div class="posted-subject">
+                                <div class="posted-tag"><h2>badges</h2><p>created 09.07.2020</p></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="posted-container">
+                            <div class="posted-img"><img src="https://tomyum.alandenz.dk/wp-content/uploads/2020/12/simon.jpg" alt="Avatar"> <h4>J Jones</h4></div>
+                            <div class="posted-topic">
+                                <h2>Problems with lasercutting</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fugit atque culpa saepe sit quaerat aspernatur consequuntur, cum dolore reiciendis sapiente fuga dolores magnam ipsum facilis vitae nobis ad. Omnis!</p>
+                            </div>
+                            <div class="posted-subject">
+                                <div class="posted-tag"><h2>lasercutting</h2><p>created 20.02.2020</p></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="posted-container">
+                            <div class="posted-img"><img src="https://tomyum.alandenz.dk/wp-content/uploads/2020/12/simon.jpg" alt="Avatar"> <h4>J Jones</h4></div>
+                            <div class="posted-topic">
+                                <h2>Problems with lasercutting</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fugit atque culpa saepe sit quaerat aspernatur consequuntur, cum dolore reiciendis sapiente fuga dolores magnam ipsum facilis vitae nobis ad. Omnis!</p>
+                            </div>
+                            <div class="posted-subject">
+                                <div class="posted-tag"><h2>lasercutting</h2><p>created 20.02.2020</p></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="posted-container">
+                            <div class="posted-img"><img src="https://tomyum.alandenz.dk/wp-content/uploads/2020/12/simon.jpg" alt="Avatar"> <h4>J Jones</h4></div>
+                            <div class="posted-topic">
+                                <h2>Problems with lasercutting</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fugit atque culpa saepe sit quaerat aspernatur consequuntur, cum dolore reiciendis sapiente fuga dolores magnam ipsum facilis vitae nobis ad. Omnis!</p>
+                            </div>
+                            <div class="posted-subject">
+                                <div class="posted-tag"><h2>lasercutting</h2><p>created 20.02.2020</p></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="posted-container">
+                            <div class="posted-img"><img src="https://tomyum.alandenz.dk/wp-content/uploads/2020/12/simon.jpg" alt="Avatar"> <h4>J Jones</h4></div>
+                            <div class="posted-topic">
+                                <h2>Problems with lasercutting</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fugit atque culpa saepe sit quaerat aspernatur consequuntur, cum dolore reiciendis sapiente fuga dolores magnam ipsum facilis vitae nobis ad. Omnis!</p>
+                            </div>
+                            <div class="posted-subject">
+                                <div class="posted-tag"><h2>lasercutting</h2><p>created 20.02.2020</p></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="posted-container">
+                            <div class="posted-img"><img src="https://tomyum.alandenz.dk/wp-content/uploads/2020/12/simon.jpg" alt="Avatar"> <h4>J Jones</h4></div>
+                            <div class="posted-topic">
+                                <h2>Problems with lasercutting</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fugit atque culpa saepe sit quaerat aspernatur consequuntur, cum dolore reiciendis sapiente fuga dolores magnam ipsum facilis vitae nobis ad. Omnis!</p>
+                            </div>
+                            <div class="posted-subject">
+                                <div class="posted-tag"><h2>lasercutting</h2><p>created 20.02.2020</p></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="posted-container">
+                            <div class="posted-img"><img src="https://tomyum.alandenz.dk/wp-content/uploads/2020/12/simon.jpg" alt="Avatar"> <h4>J Jones</h4></div>
+                            <div class="posted-topic">
+                                <h2>Problems with lasercutting</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fugit atque culpa saepe sit quaerat aspernatur consequuntur, cum dolore reiciendis sapiente fuga dolores magnam ipsum facilis vitae nobis ad. Omnis!</p>
+                            </div>
+                            <div class="posted-subject">
+                                <div class="posted-tag"><h2>lasercutting</h2><p>created 20.02.2020</p></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="posted-container">
+                            <div class="posted-img"><img src="https://tomyum.alandenz.dk/wp-content/uploads/2020/12/simon.jpg" alt="Avatar"> <h4>J Jones</h4></div>
+                            <div class="posted-topic">
+                                <h2>Problems with lasercutting</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fugit atque culpa saepe sit quaerat aspernatur consequuntur, cum dolore reiciendis sapiente fuga dolores magnam ipsum facilis vitae nobis ad. Omnis!</p>
+                            </div>
+                            <div class="posted-subject">
+                                <div class="posted-tag"><h2>lasercutting</h2><p>created 20.02.2020</p></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="posted-container">
+                            <div class="posted-img"><img src="https://tomyum.alandenz.dk/wp-content/uploads/2020/12/simon.jpg" alt="Avatar"> <h4>J Jones</h4></div>
+                            <div class="posted-topic">
+                                <h2>Problems with lasercutting</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fugit atque culpa saepe sit quaerat aspernatur consequuntur, cum dolore reiciendis sapiente fuga dolores magnam ipsum facilis vitae nobis ad. Omnis!</p>
+                            </div>
+                            <div class="posted-subject">
+                                <div class="posted-tag"><h2>lasercutting</h2><p>created 20.02.2020</p></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    @RenderPage("~/Views/Home/Footer.cshtml")
+    <script src="@Url.Content("~/Scripts/header.js")" type="text/javascript"></script>
+</body>
+</html>

@@ -15,16 +15,37 @@ namespace WebDev2020.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
+          
+          return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Header()
         {
-            ViewBag.Message = "Your contact page.";
-
             return View();
         }
+        public ActionResult Footer()
+        {
+            return View();
+        }
+        public ActionResult Makerspace()
+        {
+            return View();
+        }
+
+        public ActionResult Makerblog()
+        {
+            return View();
+        }
+
+        public ActionResult Forum()
+        {
+            return View();
+        }
+
+        public ActionResult Settings()
+        {
+            return View();
+        }
+
     }
 }
