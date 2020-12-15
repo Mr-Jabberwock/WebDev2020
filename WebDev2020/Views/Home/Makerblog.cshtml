@@ -1,5 +1,9 @@
-﻿@{
+﻿@using WebDev2020.Models
+@using WebDev2020.Extensions
+@{
+    ViewBag.Title = "Makerblog";
     Layout = null;
+    var viewData = ViewData["Data"] as List<Blog>;
 }
 
 <!DOCTYPE html>
@@ -13,6 +17,15 @@
 </head>
 <body>
     @RenderPage("~/Views/Home/Header.cshtml")
+    @for (int i = 0; i < viewData.Count; i++)
+    {
+        <li>@viewData[i].title</li>
+        <li>@viewData[i].post</li>
+        <li>@viewData[i].firstName</li>
+        <li>@viewData[i].lastName</li>
+        <li>@viewData[i].userId</li>
+        <li>@viewData[i].urlPath</li>
+    }
     <section>
         <div class="flexcontainer">
 
