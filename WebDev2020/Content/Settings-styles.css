@@ -20,6 +20,7 @@ h1, h2, h3, h4, h5, title {
 .containers {
     text-align: center;
     padding: 20px;
+    padding-top: 90px;
 }
 
 .profilepic img {
@@ -134,4 +135,9 @@ main {
         display: block;
         margin-bottom: 20px;
     }
+}
+
+.big-text{
+    font-size: 35px;
+    font-weight: 500;
 }
