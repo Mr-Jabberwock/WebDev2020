@@ -1,0 +1,123 @@
+﻿
+p {
+    font-family: 'Project2020Fonts', 'Roboto';
+}
+
+h1, h2, h3, h4, h5, h6, title {
+    font-family: 'Project2020Fonts','Bebas Neue';
+    margin: 0%;
+    color: #2E7A9D;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: 'Project2020Fonts';
+    src: url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+}
+
+
+@media (min-width: 800px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 100%;
+        padding: 5px;
+        color: #2E7A9D;
+        grid-gap: 25px;
+        height: 100%;
+        box-sizing: border-box;
+        padding-bottom: 40px;
+    }
+
+
+    body {
+        
+    }
+
+    h1 {
+        color: #2E7A9D;
+        padding-bottom: 20px;
+        font-size: 56px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .blue_underline {
+        padding: 5px 0px;
+        position: relative;
+        display: inline;
+    }
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.blue_underline:first-child:before {
+    left: 0;
+}
+
+.blue_underline:first-child:before, .blue_underline:last-child:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    border-bottom: 5px solid #4C97B9;
+    width: 50%;
+}
+
+
+
+aside {
+    align-self: start;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #EFEFEF;
+    padding: 5px;
+    height: auto;
+    color: #2E7A9D;
+   
+}
+
+section {
+    background-color: #FFAC4B;
+    color: #2E7A9D;
+    padding: 5px;
+    border-radius: 5px;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contact-info p {
+    margin: 0%;
+    padding: 0%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+
+.we-p, .join-p {
+    line-height: 25px;
+    letter-spacing: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.contact {
+    padding-top: 100px;
+    padding-bottom: 25px;
+}
+
+.we-text, .join, .contact {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+
+.spacing-area {
+    padding-bottom: 50px;
+}
+
+.center_page {
+    padding-top: 120px;
+}
