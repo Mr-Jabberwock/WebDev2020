@@ -95,3 +95,4 @@ C:\Users\JwockMallock\source\repos\WebDev2020\WebDev2020\WebDev2020\obj\Debug\We
 C:\Users\JwockMallock\source\repos\WebDev2020\WebDev2020\WebDev2020\obj\Debug\WebDev2020.csproj.CopyComplete
 C:\Users\JwockMallock\source\repos\WebDev2020\WebDev2020\WebDev2020\obj\Debug\WebDev2020.dll
 C:\Users\JwockMallock\source\repos\WebDev2020\WebDev2020\WebDev2020\obj\Debug\WebDev2020.pdb
+C:\Users\JwockMallock\source\repos\WebDev2020\WebDev2020\WebDev2020\obj\Debug\WebDev2020.csprojAssemblyReference.cache

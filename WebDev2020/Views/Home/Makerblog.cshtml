@@ -1,8 +1,10 @@
-﻿@{
+﻿@using WebDev2020.Models
+
+@{
+    ViewBag.Title = "Makerblog";
     Layout = null;
-    ViewBag.Title = "";
-    
-}
+    var viewData = ViewData["Data"] as List<Blog>;
+ } 
 
 <!DOCTYPE html>
 
@@ -15,6 +17,8 @@
 </head>
 <body>
     @RenderPage("~/Views/Home/Header.cshtml")
+
+
     <section>
         <div class="flexcontainer">
 
@@ -59,8 +63,16 @@
                         <h2>A title for you</h2>
                         <h3>by Author</h3>
                         <p>
-                            Cumulus inc chopper read, north of the river melb rooftop cinema four seasons in one day victory vs
-                            heart, victoria street dodgies graffiti kylie minogue. lo
+
+                            @for (int i = 0; i < viewData.Count; i++)
+                            {
+                                <li>@viewData[i].title</li>
+                                <li>@viewData[i].post</li>
+                                <li>@viewData[i].firstName</li>
+                                <li>@viewData[i].lastName</li>
+                                <li>@viewData[i].userId</li>
+                                <li>@viewData[i].urlPath</li>
+                            }
                         </p>
                         <br>
                         <span>20-02-2020</span>

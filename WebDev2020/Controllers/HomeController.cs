@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Text.Json;
+using System.Net;
+using WebDev2020.Models;
 
 namespace WebDev2020.Controllers
 {
@@ -34,6 +37,12 @@ namespace WebDev2020.Controllers
 
         public ActionResult Makerblog()
         {
+            WebClient client = new WebClient();
+            var json = client.DownloadString("https://makersofdenmark20201210180300.azurewebsites.net/api/blog");
+            var result = JsonSerializer.Deserialize<List<Blog>>(json);
+
+            ViewData["Data"] = result;
+
             return View();
         }
 

@@ -14,6 +14,5 @@ namespace WebDev2020.Models
         public String post { get; set; }
         public String urlPath { get; set; }
 
+    }
 }
-}
-
