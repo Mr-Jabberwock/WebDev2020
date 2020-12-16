@@ -1,0 +1,26 @@
+﻿@using WebDev2020.Models
+@{
+    ViewBag.Title = "Blog";
+    var viewData = ViewData["Data"] as List<Blog>;
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    @for (int i = 0; i < viewData.Count; i++)
+    {
+        <li>@viewData[i].title</li>
+        <li>@viewData[i].post</li>
+        <li>@viewData[i].firstName</li>
+        <li>@viewData[i].lastName</li>
+        <li>@viewData[i].userID</li>
+        <li>@viewData[i].urlPath</li>
+    }
+</body>
+</html>
