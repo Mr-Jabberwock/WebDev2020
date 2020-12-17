@@ -28,6 +28,8 @@ h1, h2, h3, h4, h5, h6, title {
         height: 100%;
         box-sizing: border-box;
         padding-bottom: 40px;
+        padding-left: 50px;
+        padding-right: 50px;
     }
 
 
@@ -39,8 +41,9 @@ h1, h2, h3, h4, h5, h6, title {
         color: #2E7A9D;
         padding-bottom: 20px;
         font-size: 56px;
-        padding-left: 10px;
-        padding-right: 10px;
+    
+        padding-left: 50px;
+        padding-right: 50px;
     }
 
     .blue_underline {
@@ -79,7 +82,7 @@ aside {
    
 }
 
-section {
+.div-box {
     background-color: #FFAC4B;
     color: #2E7A9D;
     padding: 5px;
