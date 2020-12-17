@@ -1,10 +1,10 @@
-﻿@using WebDev2020.Models
+﻿@model WebDev2020.Models.Blog
+@using WebDev2020.Models
 
 @{
-    ViewBag.Title = "Makerblog";
     Layout = null;
     var viewData = ViewData["Data"] as List<Blog>;
- } 
+}
 
 <!DOCTYPE html>
 
@@ -22,63 +22,63 @@
     <section>
         <div class="flexcontainer">
 
-
             <div class="fcitem"><div class="header-text"><h1 class="hth1">MakerBlogs</h1></div> </div>
 
             <div class="fcitem"> <div class="btndiv"><button type="button" onClick="windowToggle()" id="profilePageButton" class="addbtn">+</button></div></div>
 
         </div>
     </section>
+   
     <div id="blogpopOp">
         <button onClick="windowToggle()" class="close">X</button>
-        <form name="dataForm" method="post">
+
+        <form method="post">
             <div class="container">
                 <label class="blogtitle" for="blogName">Add Title</label>
-                <input type="text" class="blogName">
+                <input type="text" class="blogName" name="title">
             </div>
 
             <div class="container">
-                <label class="blogtitle" for="descriptions">Add paragraph</label>
-                <textarea class="descriptions" cols="30" rows="10"></textarea>
+                <label class="blogtitle" for="description">Add paragraph</label>
+                <textarea class="description" cols="30" rows="10" name="blog"></textarea>
             </div>
 
             <div class="buttons">
-                <div class="img-space"> <button class="uploadimage" id="image">Upload image</button> </div>
+                <div class="img-space"> <button class="uploadimage" id="image" name="image">Upload image</button> </div>
 
                 <div class="btn-space1">  <button class="btns" onClick="windowToggle()" id="cancel">Cancel</button> </div>
-                <div class="btn-space2"> <button class="btns" onClick="postBlogData()" id="save">Save</button> </div>
+                <div class="btn-space2"> <button type="submit" class="btns" onClick="postBlogData()" id="save">Save</button> </div>
             </div>
         </form>
 
     </div>
+
+
     <section><div class="header-p"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi modi consequuntur qui iusto at vitae, nobis animi inventore molestiae rerum sint distinctio. Quibusdam illo asperiores nulla fugit neque aperiam. Quasi?</p>  <br> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, maxime? Asperiores blanditiis eligendi deleniti officiis, veritatis ipsam, dignissimos exercitationem quos, assumenda saepe suscipit animi voluptate quis sequi eum soluta minima.</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quia, aspernatur, aliquid quos delectus at iure, modi neque error corporis non reiciendis repudiandae molestiae dolores eligendi exercitationem velit fugiat id!</p> </div></section>
     <main class="main">
         <div class="card-container">
-            <div class="city">
-                <a href="#">
-                    <div class="city-image">
-                        <img src="https://tomyum.alandenz.dk/wp-content/uploads/2020/12/2.jpg" alt="city">
-                    </div>
-                    <div class="description">
-                        <h2>A title for you</h2>
-                        <h3>by Author</h3>
-                        <p>
+            @foreach (var blog in viewData)
+            {
+                <div class="city">
+                    <a href="#">
+                        <div class="city-image">
+                            <img src=" @blog.urlPath" alt="city">
 
-                            @for (int i = 0; i < viewData.Count; i++)
-                            {
-                                <li>@viewData[i].title</li>
-                                <li>@viewData[i].post</li>
-                                <li>@viewData[i].firstName</li>
-                                <li>@viewData[i].lastName</li>
-                                <li>@viewData[i].userId</li>
-                                <li>@viewData[i].urlPath</li>
-                            }
-                        </p>
-                        <br>
-                        <span>20-02-2020</span>
-                    </div>
-                </a>
-            </div>
+                        </div>
+                        <div class="description">
+                            <h2>@blog.title</h2>
+                            <h3>by @blog.firstName @blog.lastName</h3>
+                            <p>
+                                @blog.post
+                            </p>
+                            <br>
+                            <span>20-02-2020</span>
+                        </div>
+                    </a>
+                </div>
+            }
+
+
             <div class="city">
                 <a href="#">
                     <div class="city-image">

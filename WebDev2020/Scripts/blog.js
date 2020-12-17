@@ -23,8 +23,9 @@ function postBlogData() {
     var body = document.getElementsByClassName("description");
     var form = document.getElementsByName("dataForm");
 
+    console.log(title, body)
+
     windowToggle();
-    console.log(title[0].value, body[0].value);
 
 }
 
